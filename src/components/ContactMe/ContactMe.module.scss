@@ -1,0 +1,33 @@
+.ContactMe{
+    border-radius: 16px;
+    border: solid var(--Teal) 1px;
+    z-index: 2;
+    margin: 2rem 20%;
+    background-color: #D2E5D0;
+    padding: 1vmin;
+    position: relative; 
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    font-size: 2vmin;
+    font-weight: 800;
+    input{
+        font-size: 2vmin;
+    }
+  
+}
+.container{
+    display:grid;
+    grid-template-columns: 35% 65%;
+    justify-items:left;
+    margin-bottom: 6px;
+
+}
+
+h2{
+    font-size: 3vmin;
+    font-family: "Exo 2", sans-serif;
+    padding-top: 0;
+}
+

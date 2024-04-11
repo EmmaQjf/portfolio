@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+.AboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.title{
+    font-family: "Exo 2", sans-serif;
+    font-size: 5vmin;
+    font-weight: bolder;
+    padding: 0;
+    margin: 1rem;
+}
+
+.subtitle{
+    font-family: "Reddit Mono", monospace;
+    font-size: 4vmin;
+    padding:0;
+    margin: 1rem 2rem 3rem 2rem;
+    text-align: center;
+}
+
+.profilePic{
+    width: 20vmin;
+    height: 20vmin;
+    border-radius: 50%;
+    border: solid #98D7C2 2px;
+    background-image: url('https://i.imgur.com/SdRMnrI.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 1rem ;
+}
+
+.pics{
+    width: 40vmin;
+
+}
+

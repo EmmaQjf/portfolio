@@ -1,0 +1,58 @@
+
+@keyframes up-bump {
+    0% { padding-top: 2em; }
+    50% { padding-top: 1.5em; }
+    100% { padding-top: 2em; }
+  }
+  @keyframes down-bump {
+    0% { padding-top: 2em; }
+    50% { padding-top: 2.5em; }
+    100% { padding-top: 2em; }
+  }
+
+.ProjectSection{
+    text-align: center;
+    h1 {
+        font-size: 5vmin;
+        font-family: "Exo 2", sans-serif;
+    }
+    img{
+        width: 120%;
+        border-radius: 10%;
+    }
+}
+
+.inlineButtons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.CardsContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    padding: none;
+    margin: none
+}
+
+.CardContainer{
+    border-radius: 20px;
+    width: 50vmin;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2vmin;
+    background: linear-gradient(
+        white,var(--Spearmint) 50%,var(--TealGreen) 75%,var(--Mint) 100%,
+     );
+     transition: all 0.2s ease;
+     animation: down-bump 0.4s ease;
+}
+
+.CardContainer :hover {
+    background-position: 100% 100%;
+    animation: up-bump 0.4s ease;
+  }
+
+

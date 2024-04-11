@@ -1,10 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');
+:root {
+    --white: ghostwhite;
+    --Spearmint: #98D7C2;
+    --Mint    : #DDFFE7;
+    --TealGreen: #167D7F;
+    --Teal    :  #29A0B1; 
+    --text-light: #968c84;
+    --text-dark: black;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: border-box;
+  }
+  
+
 body {
-    margin: 0;
+    margin: 1rem;
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     background-color: white;
+    font-family: "Lato", sans-serif;
+    font-weight: 300;
+    font-style: normal;
 }
 
 .banner{
@@ -23,3 +44,54 @@ body {
         color: rgba(23,5, 58, 0.8);
     }
 }
+
+
+button, a.button {
+    margin: 1vmin;
+    padding: 1vmin;
+    color: var(--text-dark);
+    background-color: var(--TealGreen);
+    font-size: 2vmin;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    box-shadow: 0px 0px 2px 2px var(--Spearmint);
+    border-radius: .5vmin;
+    outline: none;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+  
+   button:hover{
+    color: var(--white);
+    box-shadow: 0 0 20px gray;
+  }
+  
+  button.btn-sm {
+    font-size: 1.5vmin;
+    padding: .6vmin .8vmin;
+  }
+  
+  button.btn-xs {
+    font-size: 1vmin;
+    padding: .4vmin .5vmin;
+  }
+  
+  button:disabled, form:invalid button[type="submit"] {
+    cursor: not-allowed;
+    background-color: var(--TealGreen);
+  }
+  
+  button[type="submit"] {
+    grid-column: span 2;
+    margin: 1vmin 0 0;
+  }
+  
+  a:link, a:visited {
+    color: black;
+    text-decoration: none;
+  }
+  
+  a:hover, a:active {
+    color:black
+  }

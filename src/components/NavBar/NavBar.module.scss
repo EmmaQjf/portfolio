@@ -1,0 +1,30 @@
+.NavBar{
+    margin-top: -5vmin;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    img {
+        width: 10rem;
+    }
+    h1{
+        font-size: 3vmin;
+    }
+    z-index: 2;
+}
+
+.imgContainer{
+    width: 10rem;
+}
+.tabs{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 2vmin;
+    transition: transform 0.2s; 
+}
+
+
+.tab:hover {
+    color: var(--Teal)
+}
+
