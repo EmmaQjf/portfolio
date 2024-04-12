@@ -80,46 +80,72 @@ function AboutMe() {
 /* harmony export */ });
 /* harmony import */ var _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ContactMe.module.scss */ "./src/components/ContactMe/ContactMe.module.scss");
 /* harmony import */ var _SocialMedia_SocialMedia__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../SocialMedia/SocialMedia */ "./src/components/SocialMedia/SocialMedia.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+/* harmony import */ var react__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(react__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var _utilities_js_contact_api__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ../../utilities.js/contact-api */ "./src/utilities.js/contact-api.js");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
+function ownKeys(e, r) { var t = Object.keys(e); if (Object.getOwnPropertySymbols) { var o = Object.getOwnPropertySymbols(e); r && (o = o.filter(function (r) { return Object.getOwnPropertyDescriptor(e, r).enumerable; })), t.push.apply(t, o); } return t; }
+function _objectSpread(e) { for (var r = 1; r < arguments.length; r++) { var t = null != arguments[r] ? arguments[r] : {}; r % 2 ? ownKeys(Object(t), !0).forEach(function (r) { _defineProperty(e, r, t[r]); }) : Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : ownKeys(Object(t)).forEach(function (r) { Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r)); }); } return e; }
+function _defineProperty(obj, key, value) { key = _toPropertyKey(key); if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
+function _toPropertyKey(t) { var i = _toPrimitive(t, "string"); return "symbol" == typeof i ? i : i + ""; }
+function _toPrimitive(t, r) { if ("object" != typeof t || !t) return t; var e = t[Symbol.toPrimitive]; if (void 0 !== e) { var i = e.call(t, r || "default"); if ("object" != typeof i) return i; throw new TypeError("@@toPrimitive must return a primitive value."); } return ("string" === r ? String : Number)(t); }
+
+
 
 
 function ContactMe() {
-  // function handleChange(e) {
-  //     setComment({ ...comment, [e.target.name]: e.target.value });
-  // }
-
-  // async function handleSubmit(evt) {
-  //     evt.preventDefault();
-  //     try {
-  //         // Call the createComment function to upload the comment
-  //         await createComment(postId, comment);
-  //         console.log('Comment successfully uploaded');
-  //         // Reset the comment state after successful upload
-  //         setComment({ body: '' });
-  //     } catch (error) {
-  //         console.error('Error uploading comment:', error);
-  //     }
-  // }
+  const [comment, setComment] = (0,react__WEBPACK_IMPORTED_MODULE_2__.useState)({
+    name: '',
+    email: '',
+    message: ''
+  });
+  function handleChange(e) {
+    setComment(_objectSpread(_objectSpread({}, comment), {}, {
+      [e.target.name]: e.target.value
+    }));
+  }
+  async function handleSubmit(evt) {
+    evt.preventDefault();
+    try {
+      await (0,_utilities_js_contact_api__WEBPACK_IMPORTED_MODULE_3__.SendMessage)(comment);
+      console.log('Comment successfully uploaded');
+      // Reset the comment state after successful upload
+      setComment({
+        name: '',
+        email: '',
+        message: ''
+      });
+    } catch (error) {
+      console.error('Error uploading comment:', error);
+    }
+  }
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("form", {
-    className: _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].ContactMe
+    className: _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].ContactMe,
+    onSubmit: handleSubmit
   }, /*#__PURE__*/React.createElement("h2", null, "ContactMe"), /*#__PURE__*/React.createElement(_SocialMedia_SocialMedia__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("div", {
     className: _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].container
   }, /*#__PURE__*/React.createElement("label", null, "Name"), /*#__PURE__*/React.createElement("input", {
     className: _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].alignLeft,
     type: "text",
     name: "name",
+    value: comment.name,
+    onChange: handleChange,
     required: true
   })), /*#__PURE__*/React.createElement("div", {
     className: _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].container
   }, /*#__PURE__*/React.createElement("label", null, "Email"), /*#__PURE__*/React.createElement("input", {
     type: "email",
     name: "email",
+    value: comment.email,
+    onChange: handleChange,
     required: true
   })), /*#__PURE__*/React.createElement("div", {
     className: _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].container
   }, /*#__PURE__*/React.createElement("label", null, "Message"), /*#__PURE__*/React.createElement("input", {
     type: "text",
-    name: "comment",
+    name: "message",
+    value: comment.message,
+    onChange: handleChange,
     required: true
   })), /*#__PURE__*/React.createElement("button", {
     type: "submit",
@@ -330,6 +356,57 @@ function SocialMedia() {
 
 const root = (0,react_dom_client__WEBPACK_IMPORTED_MODULE_1__.createRoot)(document.getElementById("app"));
 root.render( /*#__PURE__*/React.createElement(react__WEBPACK_IMPORTED_MODULE_0__.StrictMode, null, /*#__PURE__*/React.createElement(_App__WEBPACK_IMPORTED_MODULE_2__["default"], null)));
+
+/***/ }),
+
+/***/ "./src/utilities.js/contact-api.js":
+/*!*****************************************!*\
+  !*** ./src/utilities.js/contact-api.js ***!
+  \*****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   SendMessage: () => (/* binding */ SendMessage)
+/* harmony export */ });
+/* harmony import */ var _send_request__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./send-request */ "./src/utilities.js/send-request.js");
+
+const BASE_URL = '/api/contacts';
+
+//signUP, send the data to the backend, fetch the token from the database
+function SendMessage(data) {
+  return (0,_send_request__WEBPACK_IMPORTED_MODULE_0__["default"])(BASE_URL, 'POST', data);
+}
+
+/***/ }),
+
+/***/ "./src/utilities.js/send-request.js":
+/*!******************************************!*\
+  !*** ./src/utilities.js/send-request.js ***!
+  \******************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (/* binding */ sendRequest)
+/* harmony export */ });
+async function sendRequest(url) {
+  let method = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : 'GET';
+  let payload = arguments.length > 2 && arguments[2] !== undefined ? arguments[2] : null;
+  // Fetch takes an optional options object as the 2nd argument
+  // used to include a data payload, set headers, etc.
+  const options = {
+    method
+  };
+  if (payload) {
+    options.headers = {
+      'Content-Type': 'application/json'
+    };
+    options.body = JSON.stringify(payload);
+  }
+  const res = await fetch(url, options);
+  // res.ok will be false if the status code set to 4xx in the controller action
+  if (res.ok) return res.json();
+  throw new Error('Bad Request');
+}
 
 /***/ }),
 
@@ -1504,4 +1581,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.387cf8ff5ab5a3fd74177e6ae00cd380.js.map
+//# sourceMappingURL=App.893e5be8c90f3add3d2f93c06599d0fd.js.map
