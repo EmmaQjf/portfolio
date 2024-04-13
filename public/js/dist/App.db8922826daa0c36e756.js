@@ -122,7 +122,7 @@ function ContactMe() {
   return /*#__PURE__*/React.createElement(React.Fragment, null, /*#__PURE__*/React.createElement("form", {
     className: _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].ContactMe,
     onSubmit: handleSubmit
-  }, /*#__PURE__*/React.createElement("h2", null, "ContactMe"), /*#__PURE__*/React.createElement(_SocialMedia_SocialMedia__WEBPACK_IMPORTED_MODULE_1__["default"], null), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("h2", null, "ContactMe"), /*#__PURE__*/React.createElement("div", {
     className: _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].container
   }, /*#__PURE__*/React.createElement("label", null, "Name"), /*#__PURE__*/React.createElement("input", {
     className: _ContactMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].alignLeft,
@@ -243,32 +243,38 @@ function ProjectSection() {
   }, /*#__PURE__*/React.createElement("img", {
     src: "https://i.imgur.com/i09QIRM.png"
   }), /*#__PURE__*/React.createElement("div", {
+    className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].description
+  }, /*#__PURE__*/React.createElement("div", null, "Vanilla javascript for functionality"), /*#__PURE__*/React.createElement("div", null, "Canvas for  smooth visuals and movements"), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inlineButtons
   }, /*#__PURE__*/React.createElement("a", {
     href: "https://seahorse-app-xdvn5.ondigitalocean.app/"
   }, /*#__PURE__*/React.createElement("button", null, "website")), /*#__PURE__*/React.createElement("a", {
     href: "https://github.com/EmmaQjf/bowlingGame"
-  }, /*#__PURE__*/React.createElement("button", null, "github")))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("button", null, "github"))))), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].CardContainer
   }, /*#__PURE__*/React.createElement("img", {
     src: "https://i.imgur.com/QBVGRa2.png"
   }), /*#__PURE__*/React.createElement("div", {
+    className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].description
+  }, /*#__PURE__*/React.createElement("div", null, "MERN stack"), /*#__PURE__*/React.createElement("div", null, "user authentication"), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inlineButtons
   }, /*#__PURE__*/React.createElement("a", {
     href: "https://victorianclothes.junfengqiao.me/home"
   }, /*#__PURE__*/React.createElement("button", null, "website")), /*#__PURE__*/React.createElement("a", {
     href: "https://github.com/EmmaQjf/victorian-clothes-mern-app"
-  }, /*#__PURE__*/React.createElement("button", null, "github")))), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("button", null, "github"))))), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].CardContainer
   }, /*#__PURE__*/React.createElement("img", {
     src: "https://i.imgur.com/DQdqQnJ.png"
   }), /*#__PURE__*/React.createElement("div", {
+    className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].description
+  }, /*#__PURE__*/React.createElement("div", null, "MERN stack"), /*#__PURE__*/React.createElement("div", null, " MongoDB and Firebase databases"), /*#__PURE__*/React.createElement("div", null, "user authentication"), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inlineButtons
   }, /*#__PURE__*/React.createElement("a", {
     href: "https://shareabite.junfengqiao.me/home"
   }, /*#__PURE__*/React.createElement("button", null, "website")), /*#__PURE__*/React.createElement("a", {
     href: "https://github.com/EmmaQjf/share-a-bite/tree/main"
-  }, /*#__PURE__*/React.createElement("button", null, "github"))))));
+  }, /*#__PURE__*/React.createElement("button", null, "github")))))));
 }
 
 /***/ }),
@@ -813,55 +819,70 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes mvewqBSXsX1AXt3ZlRgw {
 }
 .KNVjLyphZo_BiEho3DWi {
   text-align: center;
+  width: 100vw;
+  font-size: 3vmin;
 }
 .KNVjLyphZo_BiEho3DWi h1 {
   font-size: 5vmin;
   font-family: "Exo 2", sans-serif;
 }
 .KNVjLyphZo_BiEho3DWi img {
-  width: 120%;
+  width: 100%;
   border-radius: 10%;
+  display: inline-block;
 }
 
 .nIbI_KY3H_LXxrcdMqhK {
   display: flex;
   justify-content: center;
   align-items: center;
+  animation: none;
 }
 
 .g_81TEi9rlQPryn3GKjV {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   align-items: center;
-  justify-items: center;
-  padding: none;
+  justify-content: center;
+  padding: 1rem;
   margin: none;
 }
 
 .KU91Tmxl6ETyrSbd5EWc {
   border-radius: 20px;
-  width: 50vmin;
-  display: flex;
-  flex-direction: column;
+  padding: 1rem;
+  width: 90vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
   align-items: center;
+  justify-items: center;
   margin: 2vmin;
-  background: linear-gradient(white, var(--Spearmint) 50%, var(--TealGreen) 75%, var(--Mint) 100%);
-  transition: all 0.2s ease;
-  animation: nIStS3dTq79R6RYqQ8xE 0.4s ease;
+  background: linear-gradient(white 0%, var(--Spearmint) 50%, var(--Mint) 75%, var(--Teal) 100%);
 }
 
 .KU91Tmxl6ETyrSbd5EWc :hover {
   background-position: 100% 100%;
   animation: mvewqBSXsX1AXt3ZlRgw 0.4s ease;
-}`, "",{"version":3,"sources":["webpack://./src/components/ProjectSection.js/ProjectSection.module.scss"],"names":[],"mappings":"AACA;EACI;IAAK,gBAAA;EACP;EAAE;IAAM,kBAAA;EAGR;EAFE;IAAO,gBAAA;EAKT;AACF;AAJE;EACE;IAAK,gBAAA;EAOP;EANE;IAAM,kBAAA;EASR;EARE;IAAO,gBAAA;EAWT;AACF;AATA;EACI,kBAAA;AAWJ;AAVI;EACI,gBAAA;EACA,gCAAA;AAYR;AAVI;EACI,WAAA;EACA,kBAAA;AAYR;;AARA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;AAWJ;;AATA;EACI,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,qBAAA;EACA,aAAA;EACA,YAAA;AAYJ;;AATA;EACI,mBAAA;EACA,aAAA;EACA,aAAA;EACA,sBAAA;EACA,mBAAA;EACA,aAAA;EACA,gGAAA;EAGC,yBAAA;EACA,yCAAA;AAUL;;AAPA;EACI,8BAAA;EACA,yCAAA;AAUJ","sourcesContent":["\n@keyframes up-bump {\n    0% { padding-top: 2em; }\n    50% { padding-top: 1.5em; }\n    100% { padding-top: 2em; }\n  }\n  @keyframes down-bump {\n    0% { padding-top: 2em; }\n    50% { padding-top: 2.5em; }\n    100% { padding-top: 2em; }\n  }\n\n.ProjectSection{\n    text-align: center;\n    h1 {\n        font-size: 5vmin;\n        font-family: \"Exo 2\", sans-serif;\n    }\n    img{\n        width: 120%;\n        border-radius: 10%;\n    }\n}\n\n.inlineButtons{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n}\n.CardsContainer{\n    display: grid;\n    grid-template-columns: 1fr 1fr;\n    align-items: center;\n    justify-items: center;\n    padding: none;\n    margin: none\n}\n\n.CardContainer{\n    border-radius: 20px;\n    width: 50vmin;\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n    margin: 2vmin;\n    background: linear-gradient(\n        white,var(--Spearmint) 50%,var(--TealGreen) 75%,var(--Mint) 100%,\n     );\n     transition: all 0.2s ease;\n     animation: down-bump 0.4s ease;\n}\n\n.CardContainer :hover {\n    background-position: 100% 100%;\n    animation: up-bump 0.4s ease;\n  }\n\n\n"],"sourceRoot":""}]);
+}
+
+.nIbI_KY3H_LXxrcdMqhK :hover {
+  animation: none;
+}
+
+.coBtsZbByqIJlScUP5Nr :hover {
+  animation: none;
+}`, "",{"version":3,"sources":["webpack://./src/components/ProjectSection.js/ProjectSection.module.scss"],"names":[],"mappings":"AACA;EACI;IAAK,gBAAA;EACP;EAAE;IAAM,kBAAA;EAGR;EAFE;IAAO,gBAAA;EAKT;AACF;AAJE;EACE;IAAK,gBAAA;EAOP;EANE;IAAM,kBAAA;EASR;EARE;IAAO,gBAAA;EAWT;AACF;AATA;EACI,kBAAA;EAUA,YAAA;EACA,gBAAA;AAEJ;AAZI;EACI,gBAAA;EACA,gCAAA;AAcR;AAZI;EACI,WAAA;EACA,kBAAA;EACA,qBAAA;AAcR;;AARA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;AAWJ;;AATA;EACI,aAAA;EACA,sBAAA;EACA,WAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,YAAA;AAYJ;;AATA;EACI,mBAAA;EACA,aAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,qBAAA;EACA,aAAA;EACA,8FAAA;AAYJ;;AANA;EACI,8BAAA;EACA,yCAAA;AASJ;;AANA;EACI,eAAA;AASJ;;AAPA;EACI,eAAA;AAUJ","sourcesContent":["\n@keyframes up-bump {\n    0% { padding-top: 2em; }\n    50% { padding-top: 1.5em; }\n    100% { padding-top: 2em; }\n  }\n  @keyframes down-bump {\n    0% { padding-top: 2em; }\n    50% { padding-top: 2.5em; }\n    100% { padding-top: 2em; }\n  }\n\n.ProjectSection{\n    text-align: center;\n    h1 {\n        font-size: 5vmin;\n        font-family: \"Exo 2\", sans-serif;\n    }\n    img{\n        width: 100%;\n        border-radius: 10%;   \n        display: inline-block;\n    }\n    width: 100vw;\n    font-size: 3vmin;\n}\n\n.inlineButtons{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    animation: none;\n}\n.CardsContainer{\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n    align-items: center;\n    justify-content: center;\n    padding: 1rem;\n    margin: none\n}\n\n.CardContainer{\n    border-radius: 20px;\n    padding: 1rem;\n    width: 90vw;\n    height: auto;\n    display: grid;\n    grid-template-columns: 4fr 3fr;\n    align-items: center;\n    justify-items: center;\n    margin: 2vmin;\n    background: linear-gradient(\n        white 0%,var(--Spearmint) 50%,var(--Mint) 75%,var(--Teal) 100%,\n     );\n    \n}\n\n.CardContainer :hover{\n    background-position: 100% 100%;\n    animation: up-bump 0.4s ease;\n}\n\n.inlineButtons :hover {\n    animation: none;\n  }\n.description :hover{\n    animation: none;\n}\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ProjectSection": `KNVjLyphZo_BiEho3DWi`,
 	"inlineButtons": `nIbI_KY3H_LXxrcdMqhK`,
 	"CardsContainer": `g_81TEi9rlQPryn3GKjV`,
 	"CardContainer": `KU91Tmxl6ETyrSbd5EWc`,
-	"down-bump": `nIStS3dTq79R6RYqQ8xE`,
-	"up-bump": `mvewqBSXsX1AXt3ZlRgw`
+	"up-bump": `mvewqBSXsX1AXt3ZlRgw`,
+	"description": `coBtsZbByqIJlScUP5Nr`,
+	"down-bump": `nIStS3dTq79R6RYqQ8xE`
 };
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -1581,4 +1602,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.893e5be8c90f3add3d2f93c06599d0fd.js.map
+//# sourceMappingURL=App.78baf4af23aff9440c87edcc43181b1f.js.map

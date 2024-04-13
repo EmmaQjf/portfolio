@@ -17,42 +17,55 @@
         font-family: "Exo 2", sans-serif;
     }
     img{
-        width: 120%;
-        border-radius: 10%;
+        width: 100%;
+        border-radius: 10%;   
+        display: inline-block;
     }
+    width: 100vw;
+    font-size: 3vmin;
 }
 
 .inlineButtons{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: none;
 }
 .CardsContainer{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
     align-items: center;
-    justify-items: center;
-    padding: none;
+    justify-content: center;
+    padding: 1rem;
     margin: none
 }
 
 .CardContainer{
     border-radius: 20px;
-    width: 50vmin;
-    display: flex;
-    flex-direction: column;
+    padding: 1rem;
+    width: 90vw;
+    height: auto;
+    display: grid;
+    grid-template-columns: 4fr 3fr;
     align-items: center;
+    justify-items: center;
     margin: 2vmin;
     background: linear-gradient(
-        white,var(--Spearmint) 50%,var(--TealGreen) 75%,var(--Mint) 100%,
+        white 0%,var(--Spearmint) 50%,var(--Mint) 75%,var(--Teal) 100%,
      );
-     transition: all 0.2s ease;
-     animation: down-bump 0.4s ease;
+    
 }
 
-.CardContainer :hover {
+.CardContainer :hover{
     background-position: 100% 100%;
     animation: up-bump 0.4s ease;
-  }
+}
 
+.inlineButtons :hover {
+    animation: none;
+  }
+.description :hover{
+    animation: none;
+}
 

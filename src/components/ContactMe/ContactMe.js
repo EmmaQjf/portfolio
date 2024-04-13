@@ -28,7 +28,6 @@ export default function ContactMe(){
         <>
         <form className={styles.ContactMe} onSubmit={handleSubmit}>
             <h2>ContactMe</h2>
-            <SocialMedia/>
             <div className={styles.container}>
             <label >Name</label>
             <input className={styles.alignLeft} type="text" name="name" value={comment.name} onChange={handleChange} required />
