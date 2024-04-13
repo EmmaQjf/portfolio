@@ -1,0 +1,17 @@
+.Footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    img {
+        width: 10rem;
+    }
+    p{
+        font-size: 3vmin;
+    }
+    
+}
+
+.icons{
+    width: 50vmin;
+}

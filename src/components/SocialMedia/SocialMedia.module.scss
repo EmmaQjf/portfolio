@@ -1,19 +1,14 @@
 .SocialMedia{
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    background-color: aquamarine;
-}
-.SocialMedia img {
-    width: 2rem;
-    height: auto;
-    transition: transform 0.2s; 
+    justify-content: center;
 }
 
-.SocialMedia img:hover {
+
+.SocialMedia img:hover{
     transform: scale(1.3); 
 }
 
 .SocialMedia a {
-    margin: 0.5rem 2rem;
+    margin: 0.5rem 3rem;
 }
