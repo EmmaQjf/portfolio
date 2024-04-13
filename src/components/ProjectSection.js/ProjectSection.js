@@ -8,6 +8,7 @@ export default function ProjectSection(){
                 <div className={styles.CardContainer}>
                     <img src='https://i.imgur.com/i09QIRM.png' />
                     <div className={styles.description}>
+                        <div style={{ fontSize: '3vmin', fontWeight: '800',color: 'red', paddingBottom:'2rem'}}>Web-based Bowling Game</div>
                         <div>Vanilla javascript for functionality</div>
                         <div>Canvas for  smooth visuals and movements</div>
                     
@@ -24,6 +25,7 @@ export default function ProjectSection(){
                 <div className={styles.CardContainer}>
                     <img src='https://i.imgur.com/QBVGRa2.png' />
                     <div className={styles.description}>
+                    <div style={{ fontSize: '3vmin', fontWeight: '800',color: 'red', paddingBottom:'2rem'}}>Mern Stack shopping website</div>
                     <div>MERN stack</div>
                     <div>user authentication</div>
                         <div className={styles.inlineButtons}>
@@ -37,6 +39,7 @@ export default function ProjectSection(){
                 <div className={styles.CardContainer}>
                     <img src='https://i.imgur.com/DQdqQnJ.png'/>
                     <div className={styles.description}>
+                        <div style={{ fontSize: '3vmin', fontWeight: '800',color: 'red', paddingBottom:'2rem'}}>MERN STACK social media</div>
                     <div>MERN stack</div>
                     <div> MongoDB and Firebase databases</div>
                     <div>user authentication</div>

@@ -7,7 +7,7 @@ export default function Footer(){
         <div className={styles.Footer}>
             <div><img src='https://i.imgur.com/ZC2tFrz.png'/></div>
             <SocialMedia className={styles.icons}/>
-            <p> Thank you for visiting </p>
+            <p> Thank you for visiting! </p>
            
         </div>
     )

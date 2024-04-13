@@ -55,6 +55,7 @@ function App() {
 /* harmony import */ var _AboutMe_module_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./AboutMe.module.scss */ "./src/components/AboutMe/AboutMe.module.scss");
 /* provided dependency */ var React = __webpack_require__(/*! react */ "./node_modules/react/index.js");
 
+
 function AboutMe() {
   return /*#__PURE__*/React.createElement("div", {
     className: _AboutMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].AboutMe
@@ -64,7 +65,11 @@ function AboutMe() {
     className: _AboutMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].subtitle
   }, " I'm passionate about growth and collaboration. "), /*#__PURE__*/React.createElement("img", {
     className: _AboutMe_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].profilePic
-  }));
+  }), /*#__PURE__*/React.createElement("a", {
+    href: "../../public/files/JunfengQiaoResume.pdf",
+    target: "_blank",
+    download: true
+  }, /*#__PURE__*/React.createElement("button", null, "Resume")));
 }
 
 /***/ }),
@@ -179,7 +184,7 @@ function Footer() {
     src: "https://i.imgur.com/ZC2tFrz.png"
   })), /*#__PURE__*/React.createElement(_SocialMedia_SocialMedia__WEBPACK_IMPORTED_MODULE_1__["default"], {
     className: _Footer_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].icons
-  }), /*#__PURE__*/React.createElement("p", null, " Thank you for visiting "));
+  }), /*#__PURE__*/React.createElement("p", null, " Thank you for visiting! "));
 }
 
 /***/ }),
@@ -270,7 +275,14 @@ function ProjectSection() {
     src: "https://i.imgur.com/i09QIRM.png"
   }), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].description
-  }, /*#__PURE__*/React.createElement("div", null, "Vanilla javascript for functionality"), /*#__PURE__*/React.createElement("div", null, "Canvas for  smooth visuals and movements"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: '3vmin',
+      fontWeight: '800',
+      color: 'red',
+      paddingBottom: '2rem'
+    }
+  }, "Web-based Bowling Game"), /*#__PURE__*/React.createElement("div", null, "Vanilla javascript for functionality"), /*#__PURE__*/React.createElement("div", null, "Canvas for  smooth visuals and movements"), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inlineButtons
   }, /*#__PURE__*/React.createElement("a", {
     href: "https://seahorse-app-xdvn5.ondigitalocean.app/"
@@ -282,7 +294,14 @@ function ProjectSection() {
     src: "https://i.imgur.com/QBVGRa2.png"
   }), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].description
-  }, /*#__PURE__*/React.createElement("div", null, "MERN stack"), /*#__PURE__*/React.createElement("div", null, "user authentication"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: '3vmin',
+      fontWeight: '800',
+      color: 'red',
+      paddingBottom: '2rem'
+    }
+  }, "Mern Stack shopping website"), /*#__PURE__*/React.createElement("div", null, "MERN stack"), /*#__PURE__*/React.createElement("div", null, "user authentication"), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inlineButtons
   }, /*#__PURE__*/React.createElement("a", {
     href: "https://victorianclothes.junfengqiao.me/home"
@@ -294,7 +313,14 @@ function ProjectSection() {
     src: "https://i.imgur.com/DQdqQnJ.png"
   }), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].description
-  }, /*#__PURE__*/React.createElement("div", null, "MERN stack"), /*#__PURE__*/React.createElement("div", null, " MongoDB and Firebase databases"), /*#__PURE__*/React.createElement("div", null, "user authentication"), /*#__PURE__*/React.createElement("div", {
+  }, /*#__PURE__*/React.createElement("div", {
+    style: {
+      fontSize: '3vmin',
+      fontWeight: '800',
+      color: 'red',
+      paddingBottom: '2rem'
+    }
+  }, "MERN STACK social media"), /*#__PURE__*/React.createElement("div", null, "MERN stack"), /*#__PURE__*/React.createElement("div", null, " MongoDB and Firebase databases"), /*#__PURE__*/React.createElement("div", null, "user authentication"), /*#__PURE__*/React.createElement("div", {
     className: _ProjectSection_module_scss__WEBPACK_IMPORTED_MODULE_0__["default"].inlineButtons
   }, /*#__PURE__*/React.createElement("a", {
     href: "https://shareabite.junfengqiao.me/home"
@@ -637,7 +663,15 @@ ___CSS_LOADER_EXPORT___.push([module.id, `.lVaWyfoVeBOWi6A5dZa6 {
 
 .DlMNtmZacUP5O6uU7c8L {
   width: 40vmin;
-}`, "",{"version":3,"sources":["webpack://./src/components/AboutMe/AboutMe.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;AACJ;;AAGA;EACI,gCAAA;EACA,gBAAA;EACA,mBAAA;EACA,UAAA;EACA,YAAA;AAAJ;;AAGA;EACI,qCAAA;EACA,gBAAA;EACA,UAAA;EACA,2BAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,cAAA;EACA,kBAAA;EACA,yBAAA;EACA,wDAAA;EACA,4BAAA;EACA,sBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');\n.AboutMe{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n\n}\n\n.title{\n    font-family: \"Exo 2\", sans-serif;\n    font-size: 5vmin;\n    font-weight: bolder;\n    padding: 0;\n    margin: 1rem;\n}\n\n.subtitle{\n    font-family: \"Reddit Mono\", monospace;\n    font-size: 4vmin;\n    padding:0;\n    margin: 1rem 2rem 3rem 2rem;\n    text-align: center;\n}\n\n.profilePic{\n    width: 20vmin;\n    height: 20vmin;\n    border-radius: 50%;\n    border: solid #98D7C2 2px;\n    background-image: url('https://i.imgur.com/SdRMnrI.png');\n    background-repeat: no-repeat;\n    background-size: cover;\n    margin-bottom: 1rem ;\n}\n\n.pics{\n    width: 40vmin;\n\n}\n\n"],"sourceRoot":""}]);
+}
+
+button {
+  background-color: whitesmoke;
+}
+
+button:hover {
+  color: var(--Teal);
+}`, "",{"version":3,"sources":["webpack://./src/components/AboutMe/AboutMe.module.scss"],"names":[],"mappings":"AAEA;EACI,aAAA;EACA,sBAAA;EACA,mBAAA;AACJ;;AAGA;EACI,gCAAA;EACA,gBAAA;EACA,mBAAA;EACA,UAAA;EACA,YAAA;AAAJ;;AAGA;EACI,qCAAA;EACA,gBAAA;EACA,UAAA;EACA,2BAAA;EACA,kBAAA;AAAJ;;AAGA;EACI,aAAA;EACA,cAAA;EACA,kBAAA;EACA,yBAAA;EACA,wDAAA;EACA,4BAAA;EACA,sBAAA;EACA,mBAAA;AAAJ;;AAGA;EACI,aAAA;AAAJ;;AAIA;EACI,4BAAA;AADJ;;AAIA;EACI,kBAAA;AADJ","sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');\n@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&display=swap');\n.AboutMe{\n    display: flex;\n    flex-direction: column;\n    align-items: center;\n   \n}\n\n.title{\n    font-family: \"Exo 2\", sans-serif;\n    font-size: 5vmin;\n    font-weight: bolder;\n    padding: 0;\n    margin: 1rem;\n}\n\n.subtitle{\n    font-family: \"Reddit Mono\", monospace;\n    font-size: 4vmin;\n    padding:0;\n    margin: 1rem 2rem 3rem 2rem;\n    text-align: center;\n}\n\n.profilePic{\n    width: 20vmin;\n    height: 20vmin;\n    border-radius: 50%;\n    border: solid #98D7C2 2px;\n    background-image: url('https://i.imgur.com/SdRMnrI.png');\n    background-repeat: no-repeat;\n    background-size: cover;\n    margin-bottom: 1rem ;\n}\n\n.pics{\n    width: 40vmin;\n\n}\n\nbutton{\n    background-color: whitesmoke;\n}\n\nbutton:hover{\n    color: var(--Teal);\n}\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"AboutMe": `lVaWyfoVeBOWi6A5dZa6`,
@@ -922,6 +956,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes mvewqBSXsX1AXt3ZlRgw {
   justify-content: center;
   align-items: center;
   animation: none;
+  margin-top: 3rem;
 }
 
 .g_81TEi9rlQPryn3GKjV {
@@ -958,7 +993,7 @@ ___CSS_LOADER_EXPORT___.push([module.id, `@keyframes mvewqBSXsX1AXt3ZlRgw {
 
 .coBtsZbByqIJlScUP5Nr :hover {
   animation: none;
-}`, "",{"version":3,"sources":["webpack://./src/components/ProjectSection.js/ProjectSection.module.scss"],"names":[],"mappings":"AACA;EACI;IAAK,gBAAA;EACP;EAAE;IAAM,kBAAA;EAGR;EAFE;IAAO,gBAAA;EAKT;AACF;AAJE;EACE;IAAK,gBAAA;EAOP;EANE;IAAM,kBAAA;EASR;EARE;IAAO,gBAAA;EAWT;AACF;AATA;EACI,kBAAA;EAUA,YAAA;EACA,gBAAA;AAEJ;AAZI;EACI,gBAAA;EACA,gCAAA;AAcR;AAZI;EACI,WAAA;EACA,kBAAA;EACA,qBAAA;AAcR;;AARA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;AAWJ;;AATA;EACI,aAAA;EACA,sBAAA;EACA,WAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,YAAA;AAYJ;;AATA;EACI,mBAAA;EACA,aAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,qBAAA;EACA,aAAA;EACA,8FAAA;AAYJ;;AANA;EACI,8BAAA;EACA,yCAAA;AASJ;;AANA;EACI,eAAA;AASJ;;AAPA;EACI,eAAA;AAUJ","sourcesContent":["\n@keyframes up-bump {\n    0% { padding-top: 2em; }\n    50% { padding-top: 1.5em; }\n    100% { padding-top: 2em; }\n  }\n  @keyframes down-bump {\n    0% { padding-top: 2em; }\n    50% { padding-top: 2.5em; }\n    100% { padding-top: 2em; }\n  }\n\n.ProjectSection{\n    text-align: center;\n    h1 {\n        font-size: 5vmin;\n        font-family: \"Exo 2\", sans-serif;\n    }\n    img{\n        width: 100%;\n        border-radius: 10%;   \n        display: inline-block;\n    }\n    width: 100vw;\n    font-size: 3vmin;\n}\n\n.inlineButtons{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    animation: none;\n}\n.CardsContainer{\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n    align-items: center;\n    justify-content: center;\n    padding: 1rem;\n    margin: none\n}\n\n.CardContainer{\n    border-radius: 20px;\n    padding: 1rem;\n    width: 90vw;\n    height: auto;\n    display: grid;\n    grid-template-columns: 4fr 3fr;\n    align-items: center;\n    justify-items: center;\n    margin: 2vmin;\n    background: linear-gradient(\n        white 0%,var(--Spearmint) 50%,var(--Mint) 75%,var(--Teal) 100%,\n     );\n    \n}\n\n.CardContainer :hover{\n    background-position: 100% 100%;\n    animation: up-bump 0.4s ease;\n}\n\n.inlineButtons :hover {\n    animation: none;\n  }\n.description :hover{\n    animation: none;\n}\n\n"],"sourceRoot":""}]);
+}`, "",{"version":3,"sources":["webpack://./src/components/ProjectSection.js/ProjectSection.module.scss"],"names":[],"mappings":"AACA;EACI;IAAK,gBAAA;EACP;EAAE;IAAM,kBAAA;EAGR;EAFE;IAAO,gBAAA;EAKT;AACF;AAJE;EACE;IAAK,gBAAA;EAOP;EANE;IAAM,kBAAA;EASR;EARE;IAAO,gBAAA;EAWT;AACF;AATA;EACI,kBAAA;EAUA,YAAA;EACA,gBAAA;AAEJ;AAZI;EACI,gBAAA;EACA,gCAAA;AAcR;AAZI;EACI,WAAA;EACA,kBAAA;EACA,qBAAA;AAcR;;AARA;EACI,aAAA;EACA,uBAAA;EACA,mBAAA;EACA,eAAA;EACA,gBAAA;AAWJ;;AATA;EACI,aAAA;EACA,sBAAA;EACA,WAAA;EACA,mBAAA;EACA,uBAAA;EACA,aAAA;EACA,YAAA;AAYJ;;AATA;EACI,mBAAA;EACA,aAAA;EACA,WAAA;EACA,YAAA;EACA,aAAA;EACA,8BAAA;EACA,mBAAA;EACA,qBAAA;EACA,aAAA;EACA,8FAAA;AAYJ;;AANA;EACI,8BAAA;EACA,yCAAA;AASJ;;AANA;EACI,eAAA;AASJ;;AAPA;EACI,eAAA;AAUJ","sourcesContent":["\n@keyframes up-bump {\n    0% { padding-top: 2em; }\n    50% { padding-top: 1.5em; }\n    100% { padding-top: 2em; }\n  }\n  @keyframes down-bump {\n    0% { padding-top: 2em; }\n    50% { padding-top: 2.5em; }\n    100% { padding-top: 2em; }\n  }\n\n.ProjectSection{\n    text-align: center;\n    h1 {\n        font-size: 5vmin;\n        font-family: \"Exo 2\", sans-serif;\n    }\n    img{\n        width: 100%;\n        border-radius: 10%;   \n        display: inline-block;\n    }\n    width: 100vw;\n    font-size: 3vmin;\n}\n\n.inlineButtons{\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    animation: none;\n    margin-top: 3rem;\n}\n.CardsContainer{\n    display: flex;\n    flex-direction: column;\n    width: 100%;\n    align-items: center;\n    justify-content: center;\n    padding: 1rem;\n    margin: none\n}\n\n.CardContainer{\n    border-radius: 20px;\n    padding: 1rem;\n    width: 90vw;\n    height: auto;\n    display: grid;\n    grid-template-columns: 4fr 3fr;\n    align-items: center;\n    justify-items: center;\n    margin: 2vmin;\n    background: linear-gradient(\n        white 0%,var(--Spearmint) 50%,var(--Mint) 75%,var(--Teal) 100%,\n     );\n    \n}\n\n.CardContainer :hover{\n    background-position: 100% 100%;\n    animation: up-bump 0.4s ease;\n}\n\n.inlineButtons :hover {\n    animation: none;\n  }\n.description :hover{\n    animation: none;\n}\n\n"],"sourceRoot":""}]);
 // Exports
 ___CSS_LOADER_EXPORT___.locals = {
 	"ProjectSection": `KNVjLyphZo_BiEho3DWi`,
@@ -1733,4 +1768,4 @@ var update = _node_modules_style_loader_dist_runtime_injectStylesIntoStyleTag_js
 /******/ 	
 /******/ })()
 ;
-//# sourceMappingURL=App.4e653a5b7b622533183789d157270a03.js.map
+//# sourceMappingURL=App.e92afc773c6ac5ef27fbcc3cf0699e7d.js.map
